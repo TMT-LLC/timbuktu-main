@@ -1,42 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TIMBUKTU</title>
-    <meta
-    name="description"
-    content="TIMBUKTU LLC provides IT managed services, web development, and digital marketing solutions for small businesses in Woodbridge, VA."
-    />
-    <link rel="icon" type="image/png" href="/assets/img/goldbar.jpg">
-    <link rel="stylesheet" href="/assets/css/contact.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact | TIMBUKTU</title>
+        <meta name="description" content="Contact TIMBUKTU LLC — IT managed services, web development, and digital marketing in Woodbridge, VA.">
+        <link rel="icon" type="image/png" href="/assets/img/goldbar.jpg">
+        <link rel="stylesheet" href="/assets/css/contact.css">
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    </head>
+    <body>
 
-<body>
-  <header>
-    <div class="header-container">
-      <div class="header-logo">TIMBUKTU
-      </div>
-      <nav class="header-links">
-        <ul class="nav-list">
-          <li class="nav-item"><a href="../../index.html">Home</a></li>
-          <li class="nav-item"><a href="/pages/services/services.html">Services</a></li>
-          <li class="nav-item"><a href="/pages/projects/projects.html">Projects</a></li>
-          <li class="nav-item"><a href="/pages/portal/portal.html">Client Portal</a></li>
-          <li class="nav-item"><a href="/pages/contact/contact.html">Contact</a></li>
-          <li class="nav-item"><a href="/pages/about/about.html">About Us</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+        <header>
+            <div class="header-container">
+                <div class="logo-images">
+                    <img src="/assets/img/goldrock.png" alt="Gold Rock" class="logo-rock">
+                    <img src="/assets/img/goldcoin.png" alt="Gold Coin" class="logo-coin">
+                    <img src="/assets/img/goldbar.jpg"  alt="Gold Bar"  class="logo-bar">
+                </div>
+                <div class="header-logo">TIMBUKTU</div>
+                <nav class="header-links">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="https://timbuktu.publicvm.com">Home</a></li>
+                        <li class="nav-item"><a href="/pages/maintenance.html">Services</a></li>
+                        <li class="nav-item"><a href="/pages/maintenance.html">Projects</a></li>
+                        <li class="nav-item"><a href="/pages/maintenance.html">Client Portal</a></li>
+                        <li class="nav-item"><a href="/pages/contact/contact.html">Contact</a></li>
+                        <li class="nav-item"><a href="/pages/about/about.html">About Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-  <main >
-  </main>
+        <main class="contact-page">
 
-  <footer >
-  </footer>
+            <div class="contact-hero">
+                <div class="main-text">Get In Touch</div>
+                <div class="sub-text">Have a project in mind? Ready to modernise your tech stack? We'd love to hear from you.</div>
+            </div>
 
-  <script type="module" src="/assets/js/SAMPLE.js"></script>
-</body>
+            <div class="contact-grid">
 
+                <div class="contact-card">
+                    <div class="card-title">Send Us a Message</div>
+                    <p class="form-status" id="contactStatus" aria-live="polite"></p>
+
+                    <div class="form-group">
+                        <label for="c-name">Full Name</label>
+                        <input type="text" id="c-name" name="name" placeholder="Jane Smith" autocomplete="name">
+                        <span class="field-error" id="err-name">Please enter your name.</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="c-email">Email Address</label>
+                        <input type="email" id="c-email" name="email" placeholder="jane@example.com" autocomplete="email">
+                        <span class="field-error" id="err-email">Please enter a valid email address.</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="c-subject">Subject</label>
+                        <select id="c-subject" name="subject">
+                            <option value="" disabled selected>Select a topic…</option>
+                            <option value="IT Managed Services">IT Managed Services</option>
+                            <option value="Web Development">Web Development</option>
+                            <option value="Digital Marketing">Digital Marketing</option>
+                            <option value="Video Production">Video Production</option>
+                            <option value="General Inquiry">General Inquiry</option>
+                            <option value="Partnership">Partnership</option>
+                        </select>
+                        <span class="field-error" id="err-subject">Please select a subject.</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="c-message">Message</label>
+                        <textarea id="c-message" name="message" placeholder="Tell us about your project or question…"></textarea>
+                        <span class="field-error" id="err-message">Please enter a message.</span>
+                    </div>
+
+                    <button class="btn-submit" id="contactBtn" type="button">Send Message</button>
+                </div>
+
+                <div class="contact-info">
+
+                    <div class="info-section">
+                        <div class="info-label">Email</div>
+                        <div class="info-value">
+                            <a href="mailto:owner.timbuktu@gmail.com">owner.timbuktu@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="info-section">
+                        <div class="info-label">Address</div>
+                        <div class="info-value">
+                            14581 Crossfield Way<br>
+                            Woodbridge, VA 22191<br>
+                            USA
+                        </div>
+                    </div>
+
+                    <div class="info-section">
+                        <div class="info-label">Business Hours</div>
+                        <div class="info-value">
+                            Mon – Fri: 9:00 AM – 6:00 PM ET<br>
+                            Sat – Sun: By appointment<br>
+                        </div>
+                    </div>
+
+                    <div class="info-section">
+                        <div class="info-label">Follow Us</div>
+                        <div class="social-row">
+                            <a href="#" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            </a>
+                            <a href="#" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+                            </a>
+                            <a href="#" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                            </a>
+                            <a href="#" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                            </a>
+                            <a href="#" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>
+                            </a>
+                            <a href="#" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Reddit">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>
+                            </a>
+                            <a href="#" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Discord">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057c.002.022.015.04.033.05a19.95 19.95 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="info-section">
+                        <div class="info-label">Early Bird List</div>
+                        <form class="earlybird-form" action="https://timbuktu.publicvm.com/signup" method="GET">
+                            <input class="earlybird-input" type="email" name="email" placeholder="your@email.com" required>
+                            <button class="btn-submit" type="submit">Join</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+        </main>
+
+        <div class="footer-container">
+            <div class="copywright">© 2025 TIMBUKTU LLC</div>
+        </div>
+
+        <script src="/assets/js/contact.js"></script>
+    </body>
 </html>

@@ -4,47 +4,40 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>TIMBUKTU</title>
-        <meta
-        name="description"
-        content="TIMBUKTU LLC provides IT managed services, web development, and digital marketing solutions for small businesses in Woodbridge, VA."
-        />
+        <meta name="description" content="TIMBUKTU LLC provides IT managed services, web development, and digital marketing solutions for small businesses in Woodbridge, VA." />
         <link rel="icon" type="image/png" href="/assets/img/goldbar.jpg">
         <link rel="stylesheet" href="/assets/css/index.css">
     </head>
-
     <body>
         <header>
             <div class="header-container">
-            <div class="logo-images">
-                <img src="/assets/img/goldrock.png" alt="Gold Rock" class="logo-rock">
-                <img src="/assets/img/goldcoin.png" alt="Gold Coin" class="logo-coin">
-                <img src="/assets/img/goldbar.jpg" alt="Gold Bar" class="logo-bar">
+                <div class="logo-images">
+                    <img src="/assets/img/goldrock.png" alt="Gold Rock" class="logo-rock">
+                    <img src="/assets/img/goldcoin.png" alt="Gold Coin" class="logo-coin">
+                    <img src="/assets/img/goldbar.jpg"  alt="Gold Bar"  class="logo-bar">
+                </div>
+                <div class="header-logo">TIMBUKTU</div>
+                <nav class="header-links">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="https://timbuktu.publicvm.com">Home</a></li>
+                        <li class="nav-item"><a href="/pages/maintenance.html">Services</a></li>
+                        <li class="nav-item"><a href="/pages/maintenance.html">Projects</a></li>
+                        <li class="nav-item"><a href="/pages/maintenance.html">Client Portal</a></li>
+                        <li class="nav-item"><a href="/pages/contact/contact.html">Contact</a></li>
+                        <li class="nav-item"><a href="/pages/about/about.html">About Us</a></li>
+                    </ul>
+                </nav>
             </div>
-
-            <div class="header-logo">TIMBUKTU
-            </div>
-            <nav class="header-links">
-                <ul class="nav-list">
-                <li class="nav-item"><a href="https://timbuktu.publicvm.com">Home</a></li>
-                <li class="nav-item"><a href="/pages/maintenance.html">Services</a></li>
-                <li class="nav-item"><a href="/pages/maintenance.html">Projects</a></li>
-                <li class="nav-item"><a href="/pages/maintenance.html">Client Portal</a></li>
-                <li class="nav-item"><a href="/pages/maintenance.html">Contact</a></li>
-                <li class="nav-item"><a href="/pages/about/about.html">About Us</a></li>
-                </ul>
-            </nav>
         </header>
 
         <div class="body">
+
             <div class="section1">
-                <div class=section1-left>
-                    <div class="main-text">Welcome to TIMBUKTU
-                    </div>
-                    <div class="sub-text"> We help people with ideas harness the power of computer technology, and make the complex simple.
- 
-                    </div>
+                <div class="section1-left">
+                    <div class="main-text">Welcome to TIMBUKTU</div>
+                    <div class="sub-text">We help people with ideas harness the power of computer technology, and make the complex simple.</div>
                     <div class="signup-button">
-                        <button class="button1">Learn More</button>
+                        <a href="/pages/contact/contact.html"><button class="button1">Learn More</button></a>
                     </div>
                 </div>
                 <div class="section1-right">
@@ -57,19 +50,19 @@
                     <div class="main-text">Full Stack Information Technology Support and Solutions</div>
                 </div>
                 <div class="info-blocks">
-                    <div class="block"> 
+                    <div class="block">
                         <img class="block-img" src="assets/img/itmspcollage_noalpha.png" alt="Picture of Information Technology">
                         <div class="block-text">Innovative, efficient IT solutions for government and commercial clients. We deliver secure, reliable infrastructure, proactive support, and mission-ready technology designed to scale with ambition.</div>
                     </div>
-                    <div class="block"> 
+                    <div class="block">
                         <img class="block-img" src="assets/img/itsmspcollage_box2.png" alt="Picture of more Information Technology">
                         <div class="block-text">Fast, secure, and intelligently engineered websites. We build, host, and maintain high-performance digital experiences with a focus on innovation, reliability, and long-term efficiency.</div>
                     </div>
-                    <div class="block"> 
+                    <div class="block">
                         <img class="block-img" src="assets/img/frontendcollage.png" alt="Picture of front end IT">
                         <div class="block-text">Dynamic, creative video production built for modern audiences. We craft polished, platform-optimized content that captures attention and amplifies your vision.</div>
                     </div>
-                    <div class="block"> 
+                    <div class="block">
                         <img class="block-img" src="assets/img/tmtlogo_boximg.png" alt="Picture of Timbuktu logo">
                         <div class="block-text">Creative, high-impact digital content that elevates brands. We blend strategy, design, and storytelling to drive engagement and growth across all platforms.</div>
                     </div>
@@ -79,26 +72,25 @@
             <div class="section3">
                 <div class="business-quote">
                     <div class="main-text"><em>Sometimes it is the people no one imagines anything of who do the things no one can imagine.</em></div>
-                    <div class="sub-text"><a  target="_blank" rel ="noopener noreferrer" href="https://en.wikipedia.org/wiki/Alan_Turing" class="famous-quote" >-Alan Turing</a></div>
+                    <div class="sub-text"><a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Alan_Turing" class="famous-quote">-Alan Turing</a></div>
                 </div>
             </div>
-            
+
             <div class="section4">
                 <div class="signup-message">
                     <div class="main-text">Join our 'Early Bird' Group!</div>
-                    <div class="signup-info">
-                        <div class="sub-text">Sign up for our network to receive updates on industry updates, company annoucements, and other news!</div>
-                    </div>
+                    <div class="sub-text">Sign up to receive industry updates, company announcements, and more!</div>
                 </div>
-                <div class="signup-button">
-                    <button class="button2">Sign up</button>
-                </div>
+                <form class="earlybird-form" action="https://timbuktu.publicvm.com/signup" method="GET">
+                    <input class="earlybird-input" type="email" name="email" placeholder="Enter your email address" required>
+                    <button class="button2" type="submit">Sign Up</button>
+                </form>
             </div>
+
         </div>
 
         <div class="footer-container">
-            <div class="copywright">© 2025 TIMBUKTU LLC
-            </div>
+            <div class="copywright">© 2025 TIMBUKTU LLC</div>
         </div>
     </body>
 </html>

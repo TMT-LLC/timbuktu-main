@@ -8,16 +8,14 @@
 /* Logo default state (black before animation) */
 .header-logo {
     font-family: 'Cinzel', serif;
-    color: black;            /* start black */
-    animation: logoFadeIn 5s forwards; /* play once on load */
+    color: black;
+    animation: logoFadeIn 5s forwards;
 }
 
-/* Keyframes for fade from black → white */
 @keyframes logoFadeIn {
-    0%, 10%   { color: black; }   /* initial black */
-    100% { color: white; }   /* final white */
+    0%, 10%   { color: black; }
+    100%      { color: white; }
 }
-
 
 /* Universal Configuration */
 * {
@@ -28,44 +26,38 @@
 
 /* HEADER LOGO */
 
-/* Animated Logo Switching from gold rock, coin, bar */
 .logo-images {
-  position: relative;
-  width: 0px;
-  height: 75px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 0 0 auto;
+    position: relative;
+    width: 0px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
 }
 
-/* All images stacked */
 .logo-images img {
-  position: absolute;
-  opacity: 0;
-  animation: switchImage 9s steps(1) infinite;
+    position: absolute;
+    opacity: 0;
+    animation: switchImage 9s steps(1) infinite;
 }
 
-/* Individual image sizes */
 .logo-rock { width: 75px; height: 75px; }
 .logo-coin { width: 40px; height: 40px; }
 .logo-bar  { width: 75px; height: 75px; }
 
-/* Timing offsets */
 .logo-images img:nth-child(1) { animation-delay: 0s; }
 .logo-images img:nth-child(2) { animation-delay: 3s; }
 .logo-images img:nth-child(3) { animation-delay: 6s; }
 
-/* Hard switch keyframes */
 @keyframes switchImage {
-  0%   { opacity: 1; }
-  33.5%  { opacity: 0; }
-  100% { opacity: 0; }
+    0%     { opacity: 1; }
+    33.5%  { opacity: 0; }
+    100%   { opacity: 0; }
 }
 
-/* HEADER LOGO */
-
 /* HEADER */
+
 .header-container {
     display: flex;
     flex-flow: row wrap;
@@ -92,7 +84,7 @@
     font-size: 16px;
 }
 
-.nav-list{
+.nav-list {
     display: flex;
     flex: auto;
     flex-flow: row wrap;
@@ -108,38 +100,36 @@
 }
 
 .nav-item a:link {
-    color: inherit;        
+    color: inherit;
     text-decoration: none;
-
     background-color: #000;
     border: 2px solid #fff;
     padding: 10px;
     border-radius: 36px;
     font-size: 16px;
     color: #fff;
-
 }
+
 .nav-item a:visited {
-    color: inherit;        
+    color: inherit;
     text-decoration: none;
 }
+
 .nav-item a:hover {
     color: black;
-    background-color: white;        
+    background-color: white;
     border-color: black;
     text-decoration: none;
 }
 
-.nav-item a:active {   
-    color: black;        
+.nav-item a:active {
+    color: black;
     text-decoration: none;
     background-color: #FFD700;
     border-color: #C0C0C0;
-
 }
-/* HEADER */
 
-/* SECTION 1 ------------------------------------------------------ */
+/* SECTION 1 */
 
 .section1 {
     display: flex;
@@ -167,12 +157,6 @@
     max-width: 500px;
 }
 
-.signup-button .button {
-    background-color: #C0C0C0;
-    color: #000;
-    padding: 10px 50px;
-}
-
 .section1-right {
     display: flex;
 }
@@ -184,7 +168,7 @@
     border: 3px solid lch(77.7% 0.01 296.81);
 }
 
-/* SECTION 2 ------------------------------------------------------ */
+/* SECTION 2 */
 
 .section2 {
     display: flex;
@@ -237,7 +221,7 @@
     align-items: center;
 }
 
-/* SECTION 3 ------------------------------------------------------ */
+/* SECTION 3 */
 
 .section3 {
     display: flex;
@@ -274,14 +258,15 @@
     color: #777;
 }
 
-/* SECTION 4 ------------------------------------------------------ */
+/* SECTION 4 */
 
 .section4 {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+    align-items: center;
     margin: 50px;
-    gap: 100px;
+    gap: 40px;
     background: #000;
     padding: 20px;
     border-radius: 12px;
@@ -294,16 +279,39 @@
     font-weight: 500;
 }
 
-.button2 {
-    border: 2px solid #fff;
-    background-color: #000;
-    color: #fff;
-    border-radius: 12px;
-    padding: 10px 30px;
-    font-size: 18px;
+.signup-message .sub-text {
+    font-size: 14px;
+    color: #C0C0C0;
+    margin-top: 6px;
 }
 
-/* FOOTER ------------------------------------------------------ */
+/* Early Bird email input — NEW */
+.earlybird-form {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.earlybird-input {
+    font-family: 'Cinzel', serif;
+    font-size: 14px;
+    color: #fff;
+    background: #000;
+    border: 2px solid #fff;
+    border-radius: 12px;
+    padding: 10px 18px;
+    outline: none;
+    transition: border-color 0.2s;
+    flex: 1;
+    min-width: 200px;
+}
+
+.earlybird-input:focus {
+    border-color: #FFD700;
+}
+
+/* FOOTER */
 
 .footer-container {
     margin-top: auto;
@@ -316,9 +324,42 @@
     background-color: #FFD700;
 }
 
+/* BUTTONS */
+
 .button1 {
+    font-family: 'Cinzel', serif;
     border-radius: 12px;
     padding: 10px 30px;
     font-size: 18px;
-    border: none;
+    border: 2px solid #000;
+    background: #000;
+    color: #FFD700;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.button1:hover {
+    background: #FFD700;
+    color: #000;
+}
+
+.signup-button a {
+    text-decoration: none;
+}
+
+.button2 {
+    font-family: 'Cinzel', serif;
+    border: 2px solid #fff;
+    background-color: #000;
+    color: #fff;
+    border-radius: 12px;
+    padding: 10px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.button2:hover {
+    background: #fff;
+    color: #000;
 }
